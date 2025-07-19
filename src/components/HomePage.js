@@ -8,6 +8,7 @@ import products_image_3 from '../assets/products_image_3.jpg';
 import products_image_4 from '../assets/products_image_4.jpg';
 import leather_bag from '../assets/leather_bag.png';
 import profile from '../assets/bussiness-man.png';
+import logo from '../assets/eco_logo.png';
 
 const HomePage = () => {
 
@@ -29,7 +30,7 @@ const HomePage = () => {
         <>
             <div className="home-page-container">
                 <nav className="navbar">
-                    <div className="logo">Mehek</div>
+                    <div className="logo"><img src={logo} alt="logo" className="logo" /> </div>
                     <ul className="nav-links">
                         <li><a href="/about">ABOUT</a></li>
                         <li><a href="/carbono">CARBONO</a></li>
@@ -128,7 +129,7 @@ const HomePage = () => {
             <div className="footer">
                 <div className="footer-container">
                     <div className="footer-col1">
-                        <p className="footer-title"> Mehek </p>
+                        <p className="footer-title"> <img src={logo} alt="logo" className="logo" /> </p>
                         <p className="footer-subtitle"> Eco Essentials for Everyday Life </p>
                         <p className="address"> 📍 Green Roots Pvt. Ltd.21 Eco Avenue, Indiranagar Bangalore, Karnataka – 560038 India </p>
                         <p> ✉️ Email: <br /> hello@greenroots.in </p>

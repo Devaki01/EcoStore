@@ -418,3 +418,8 @@ li {
     font-family: 'Julius Sans One', sans-serif;
 }
 
+.logo {
+    height: 5rem;
+    width: 8rem;
+    padding-left: 0.5rem;
+}
