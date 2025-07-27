@@ -55,7 +55,16 @@ const HomePage = () => {
             <div className="about-page">
                 <div className="about-page-container">
                     <div className="Title"> About Us </div>
-                    <p className="content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p className="content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                    {/*<div className="figures">*/}
+                    {/*    <div className="figures-item">*/}
+                    {/*        <p> 1000+ </p>*/}
+                    {/*        <p> </p>*/}
+                    {/*    </div>*/}
+                    {/*    <div className="figures-item"></div>*/}
+                    {/*    <div className="figures-item"></div>*/}
+                    {/*</div>*/}
                 </div>
                 <div> <img src={about} alt="image" className="about-image"/> </div>
             </div>

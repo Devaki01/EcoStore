@@ -1,0 +1,81 @@
+
+.about-page-container{
+    width: 100%;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgba(35, 101, 51);
+    padding-left: 3rem;
+    margin-top: -0.5rem;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.sub-title {
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #11B650;
+    padding-inline: 3rem;
+    margin-top: -2rem;
+    margin-bottom: 3rem;
+}
+
+.section1 {
+    background-color: rgba(16, 181, 79, 0.1);
+    margin: 2rem;
+    border: black 2px solid;
+    border-radius: 1rem;
+}
+
+.main-about {
+    font-size: 28px;
+    text-align: center;
+    color: black;
+    padding: 4rem;
+    font-weight: lighter;
+    /*width: 100%;*/
+
+}
+
+.figures {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-around;
+    padding-bottom: 4rem;
+}
+
+.num {
+    font-size: 84px;
+    font-weight: bolder;
+    font-family: 'Julius Sans One', sans-serif;
+    color: rgba(35, 101, 51);
+}
+
+.caption {
+    font-size: 22px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.section2{
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.content {
+    font-size: 18px;
+    color: white;
+}

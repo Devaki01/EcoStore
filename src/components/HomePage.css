@@ -6,6 +6,7 @@
     padding: 1.5rem;
     text-align: center;
 }
+
 .navbar{
     display: flex;
     align-items: center;
@@ -25,7 +26,7 @@
 .nav-links li a {
     text-decoration: none;
     color: black;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 500;
     text-transform: uppercase;
     transition: color 0.2s ease-in-out;
@@ -42,7 +43,7 @@
 
 .hero-headline {
     font-family: 'Julius Sans One', sans-serif;
-    font-size: 80px;
+    font-size: 70px;
     padding: 10px;
 }
 
@@ -104,7 +105,7 @@
 }
 
 .content {
-    font-size: 28px;
+    font-size: 24px;
     padding-top: 3rem;
 }
 
@@ -390,6 +391,7 @@
 
 .footer-subtitle {
     font-size: 24px;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 .footer-col1 {
@@ -409,8 +411,10 @@ ul {
 
 h2 {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: bolder;
     padding-bottom: 1rem;
+    font-family: 'Julius Sans One', sans-serif;
+
 }
 
 li {
