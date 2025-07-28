@@ -64,18 +64,28 @@
     padding: 3rem;
     display: flex;
     flex-direction: row;
+    margin: 2rem;
     gap: 1rem;
     justify-content: space-around;
     background-color: black;
 }
 
+.section2 > * {
+    flex: 1;
+}
+
 .heading {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     color: white;
+    align-content: center;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 .content {
     font-size: 18px;
     color: white;
 }
+
+
+

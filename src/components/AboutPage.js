@@ -30,22 +30,14 @@ const AboutUs = () => {
             </div>
 
             <div className="section2">
-                <div className="heading"> The Spark: Our Journey </div>
+                <div className="heading"> The Spark: <br /> Our Journey </div>
                 <div className="content">
                     <p> Like many of you, we were growing increasingly concerned about our planet's future. We were frustrated by the endless plastic, the confusing labels, and how difficult it was to find products that were truly good for our families and the environment. It felt like making the right choice was always the hardest one.
 
                         That frustration sparked an idea: What if we could create one place—a trusted destination—where every item was carefully vetted for its quality, ethics, and environmental impact? What if we could do the research, so you wouldn't have to?
 
-                        And so, [Your Brand Name] was born. It started in a small living room in [Your City/Town, e.g., Pune] with a handful of products and a big dream. We weren't just building a store; we were creating the resource we wished we had.</p>
+                        And so, EcoStore was born. It started in a small living room in Pune with a handful of products and a big dream. We weren't just building a store; we were creating the resource we wished we had.</p>
                 </div>
-            </div>
-            <div className="section2">
-                <div className="content"></div>
-                <div className="heading"> <p> Our Vision </p></div>
-            </div>
-            <div className="section2">
-                <div className="heading"> <p> Our mission </p></div>
-                <div className="content"></div>
             </div>
         </div>
     )
