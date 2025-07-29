@@ -6,7 +6,7 @@ import ShopPage from './components/ShopPage';
 import Carbono from './components/Carbono';
 import Blogs from './components/BlogsPage';
 import Support from './components/Support';
-
+import Error from "./components/404";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <Route path="/carbono" element={<Carbono />} />
           <Route path="/values" element={<Blogs />} />
           <Route path="/support" element={<Support />} />
-          <Route path="*" element={<h2>404 - Page Not Found</h2>} />
+          <Route path="*" element={<Error/>} />
         </Routes>
       </Router>
   );
