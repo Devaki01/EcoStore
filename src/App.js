@@ -6,9 +6,20 @@ import ShopPage from './components/ShopPage';
 import Carbono from './components/Carbono';
 import Blogs from './components/BlogsPage';
 import Support from './components/Support';
+import {useEffect, useState} from "react";
 
 
 function App() {
+    const [message, setMessage] = useState('');
+
+    useEffect(() => {
+        // Fetch the message from the backend API
+        fetch('/api/message')
+            .then((res) => res.json())
+            .then((data) => setMessage(data.message))
+            .catch((err) => console.error(err));
+    }, []);
+
   return (
       <Router>
         <Routes>
