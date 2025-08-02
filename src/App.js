@@ -6,32 +6,33 @@ import ShopPage from './components/ShopPage';
 import Carbono from './components/Carbono';
 import Blogs from './components/BlogsPage';
 import Support from './components/Support';
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
+import NotFoundPage from './components/NotFoundPage';
 
 
 function App() {
-    const [message, setMessage] = useState('');
+  const [message, setMessage] = useState('');
 
-    useEffect(() => {
-        // Fetch the message from the backend API
-        fetch('/api/message')
-            .then((res) => res.json())
-            .then((data) => setMessage(data.message))
-            .catch((err) => console.error(err));
-    }, []);
+  useEffect(() => {
+    // Fetch the message from the backend API
+    fetch('/api/message')
+      .then((res) => res.json())
+      .then((data) => setMessage(data.message))
+      .catch((err) => console.error(err));
+  }, []);
 
   return (
-      <Router>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/shop" element={<ShopPage />} />
-          <Route path="/carbono" element={<Carbono />} />
-          <Route path="/values" element={<Blogs />} />
-          <Route path="/support" element={<Support />} />
-          <Route path="*" element={<h2>404 - Page Not Found</h2>} />
-        </Routes>
-      </Router>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/shop" element={<ShopPage />} />
+        <Route path="/carbono" element={<Carbono />} />
+        <Route path="/values" element={<Blogs />} />
+        <Route path="/support" element={<Support />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+    </Router>
   );
 }
 
