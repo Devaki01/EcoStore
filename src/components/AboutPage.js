@@ -1,34 +1,40 @@
-import logo from "../assets/eco_logo.png";
-import profile from "../assets/bussiness-man.png";
 import React from "react";
-import './AboutPage.css';
-
+import CountUpOnView from "./CountUpOnView";
+import "./AboutPage.css";
 
 const AboutUs = () => {
     return (
         <div className="about-page-container">
             <p className="title"> About Us </p>
-            <p className="sub-title"> From a Simple Idea to a Sustainable Reality. </p>
+            <p className="sub-title">
+                {" "}
+                From a Simple Idea to a Sustainable Reality.{" "}
+            </p>
 
             <div className="section1">
-                <p className="main-about">Small choices can create big change. Our journey started with a simple goal: to make sustainable living accessible, beautiful, and effortless for everyone. Every product you'll find here is thoughtfully curated, ethically sourced, and designed to be kind to our planet. Thank you for joining us in building a greener future, one conscious choice at a time.</p>
+                <p className="main-about"> Small choices can create big change. Our journey started with a simple goal: to make sustainable living accessible, beautiful, and effortless for everyone. Every product you'll find here is thoughtfully curated, ethically sourced, and designed to be kind to our planet. Thank you for joining us in building a greener future, one conscious choice at a time. </p>
 
                 <div className="figures">
                     <div className="item1">
-                        <div className="num">1,500+</div>
-                        <div className="caption"> Tress Planted </div>
+                        <div className="num">
+                            <CountUpOnView end={1500} suffix="+" />
+                        </div>
+                        <div className="caption"> Trees Planted </div>
                     </div>
                     <div className="item2">
-                        <div className="num">99%</div>
+                        <div className="num">
+                            <CountUpOnView end={99} suffix="%" />
+                        </div>
                         <div className="caption"> Plastic Free Packaging</div>
                     </div>
                     <div className="item3">
-                        <div className="num">5K+</div>
+                        <div className="num">
+                            <CountUpOnView end={5000} suffix="+" />
+                        </div>
                         <div className="caption">Eco-friendly Customers</div>
                     </div>
                 </div>
             </div>
-
             <div className="section2">
                 <div className="heading"> The Spark: <br /> Our Journey </div>
                 <div className="content">
@@ -39,9 +45,18 @@ const AboutUs = () => {
                         And so, EcoStore was born. It started in a small living room in Pune with a handful of products and a big dream. We weren't just building a store; we were creating the resource we wished we had.</p>
                 </div>
             </div>
-        </div>
-    )
+            <div className="section3">
+                <div className="heading"> Our Mission & <br /> Vision </div>
+                <div className="content">
+                    <h3> Our Mission</h3>
+                    <p> To make sustainable living effortless and inspiring by curating a collection of high-quality, ethically sourced, and genuinely eco-friendly products that you can trust and love.</p>
 
-}
+                    <h3> Our Vision </h3>
+                    <p> We envision a world where conscious consumerism is the norm, not the exception. A future where every home is filled with products that are kind to the people who make them, the people who use them, and the planet we all share. </p>
+                </div>
+            </div>
+        </div>
+    );
+};
 
 export default AboutUs;

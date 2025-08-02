@@ -67,7 +67,6 @@
     margin: 2rem;
     gap: 1rem;
     justify-content: space-around;
-    background-color: black;
 }
 
 .section2 > * {
@@ -77,15 +76,42 @@
 .heading {
     font-size: 4rem;
     font-weight: bold;
-    color: white;
     align-content: center;
     font-family: 'Julius Sans One', sans-serif;
+    color: #11B650;
 }
 
 .content {
     font-size: 18px;
-    color: white;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 3rem;
+    margin: 2rem;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.section3 > * {
+    flex: 1;
+}
+
+h3 {
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 
+.section3 > .heading {
+    padding-left: 3rem;
+}
 
+.section4 {
+    padding: 2rem;
+    text-align: center;
+}
+
+.section4 > .heading {
+    font-size: 3rem;
+}
