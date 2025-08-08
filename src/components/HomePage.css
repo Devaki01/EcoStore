@@ -3,16 +3,17 @@
 }
 
 .home-page-container{
-    padding: 1.5rem;
+   
     text-align: center;
 }
-
+/* nav*/
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: black solid 1px;
     border-top: black solid 1px;
+    margin-top: 1.5rem;
 }
 
 .nav-links{
@@ -427,4 +428,182 @@ li {
     height: 5rem;
     width: 8rem;
     padding-left: 0.5rem;
+}
+
+/* MOBLIE LAYOUT CSS*/
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+  .hero-headline {
+    font-size: 36px;
+    padding: 10px 5px;
+  }
+
+  .get-started-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+
+  .about-page {
+    flex-direction: column;
+    padding-inline: 2rem;
+  }
+
+  .about-page-container {
+    padding-right: 0;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .about-image {
+    max-height: 250px;
+    margin-top: 1rem;
+    transform: none;
+    box-shadow: none;
+  }
+
+  .Title {
+    font-size: 32px;
+    padding-block: 10px;
+    padding-inline: 15px;
+  }
+
+  .about-content {
+    font-size: 18px;
+    padding-top: 1.5rem;
+  }
+
+  .top-actions {
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .see-more-button {
+    font-size: 18px;
+    padding: 0.4rem 1.5rem;
+  }
+
+  .main-headline {
+    font-size: 28px;
+    padding-left: 1rem;
+  }
+
+  .main-content-header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    gap: 1rem;
+  }
+
+  .description-and-cta {
+    max-width: 100%;
+    margin-bottom: 0;
+    padding-right: 0;
+    align-items: flex-start;
+  }
+
+  .description-text {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .shop-now-button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.5rem;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-top: 0;
+    padding-inline: 1rem;
+  }
+
+  .special-collection-item {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .special_collection_title {
+    font-size: 28px;
+    padding-left: 0;
+    padding-top: 0;
+  }
+
+  .special_collection_subtitle {
+    font-size: 16px;
+    padding-left: 0;
+    margin-top: 0.5rem;
+  }
+
+  .shop-now-button-special-connection {
+    margin: 1rem auto 0;
+  }
+
+  .leather_bag {
+    height: auto;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+
+  .testimonials-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .testimonials-container {
+    flex-direction: column;
+    padding-inline: 1rem;
+  }
+
+  .testimonials-item {
+    min-width: auto;
+    margin-bottom: 1rem;
+  }
+
+  .testimonials-designation {
+    margin-top: 0;
+    padding-left: 0;
+    font-size: 14px;
+  }
+
+  .testimonials-name {
+    font-size: 20px;
+  }
+
+  .profile {
+    height: 45px;
+    width: 45px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .footer-title {
+    font-size: 28px;
+  }
+
+  .footer-subtitle {
+    font-size: 18px;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    padding-block: 0.3rem;
+    font-size: 14px;
+  }
+
+  .logo {
+    height: 3rem;
+    width: 5rem;
+    padding-left: 0;
+  }
 }
