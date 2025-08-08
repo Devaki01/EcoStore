@@ -1,9 +1,12 @@
 import React from "react";
 import CountUpOnView from "./CountUpOnView";
 import "./AboutPage.css";
+import Navbar from "./Navbar";
 
 const AboutUs = () => {
     return (
+        <>
+        <Navbar />
         <div className="about-page-container">
             <p className="title"> About Us </p>
             <p className="sub-title">
@@ -56,6 +59,7 @@ const AboutUs = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 
