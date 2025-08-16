@@ -1,0 +1,83 @@
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+  margin-left: auto;
+  padding: 10px;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+
+/* Animate hamburger into X when open */
+.line1.open {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.line2.open {
+  opacity: 0;
+}
+.line3.open {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 60px; /* height of navbar approx */
+    right: 0;
+    background-color: white;
+    width: 200px;
+    height: 100vh;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    overflow-y: auto;
+  }
+
+  /* Show menu when toggled */
+  .nav-links.mobile-open {
+    display: flex;
+  }
+
+  .nav-links li a {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  /* Hide gap for desktop */
+  .nav-links {
+    gap: 0;
+  }
+
+  /* Show hamburger icon */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hide nav links on desktop layout */
+  @media (min-width: 769px) {
+    .nav-links {
+      display: flex !important;
+      position: static;
+      height: auto;
+      width: auto;
+      flex-direction: row;
+      box-shadow: none;
+      padding: 0;
+    }
+
+    .hamburger {
+      display: none;
+    }
+  }
+}
