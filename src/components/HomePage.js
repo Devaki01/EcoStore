@@ -165,9 +165,26 @@ const HomePage = () => {
                     <div className="footer-col">
                         <ul>
                             <h2> Follow Us </h2>
-                            <li> Twitter </li>
-                            <li> Instagram </li>
-                            <li> LinkedIn </li>
+                            <li> 
+                                <a href="https://github.com/devaki01/ecostore" target="_blank" rel="noopener noreferrer" className="social-link">
+                                    <i className="fab fa-github"></i> GitHub
+                                </a>
+                            </li>
+                            <li> 
+                                <a href="https://linkedin.com/company/ecostore" target="_blank" rel="noopener noreferrer" className="social-link">
+                                    <i className="fab fa-linkedin"></i> LinkedIn
+                                </a>
+                            </li>
+                            <li> 
+                                <a href="https://twitter.com/ecostore" target="_blank" rel="noopener noreferrer" className="social-link">
+                                    <i className="fab fa-twitter"></i> Twitter
+                                </a>
+                            </li>
+                            <li> 
+                                <a href="https://discord.gg/ecostore" target="_blank" rel="noopener noreferrer" className="social-link">
+                                    <i className="fab fa-discord"></i> Discord
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>

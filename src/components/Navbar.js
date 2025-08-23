@@ -3,6 +3,7 @@ import './Navbar.css';
 import profile from '../assets/bussiness-man.png';
 import logo from '../assets/eco_logo.png';
 import './HomePage.css';
+import ThemeToggle from './ThemeToggle';
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -27,7 +28,8 @@ const Navbar = () => {
         <li><a href="/support" onClick={() => setMenuOpen(false)}>SUPPORT</a></li>
       </ul>
 
-      <div>
+      <div className="nav-actions">
+        <ThemeToggle />
         <img src={profile} alt="user" className="profile-icon" />
       </div>
     </nav>

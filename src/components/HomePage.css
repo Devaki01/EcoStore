@@ -613,3 +613,24 @@ li {
     padding-left: 0;
   }
 }
+
+/* Social Links Styling */
+.social-link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #11B650;
+  text-decoration: none;
+}
+
+.social-link i {
+  font-size: 1.2rem;
+  width: 20px;
+  text-align: center;
+}
