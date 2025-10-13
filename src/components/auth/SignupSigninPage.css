@@ -1,0 +1,196 @@
+/* Background and Centering */
+.signup-signin-bg {
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #11B650 0%, #000 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card Styles */
+.signup-signin-card {
+    background: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    padding: 2.5rem 2.5rem 2rem 2.5rem;
+    max-width: 370px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Title Styles */
+.signup-signin-title {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 2.2rem;
+    color: #11B650;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Form Styles */
+.signup-signin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* Input Group Styles */
+.signup-signin-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+/* Label Styles */
+.signup-signin-label {
+    font-size: 1rem;
+    color: #222;
+    font-family: 'Julius Sans One', sans-serif;
+    margin-bottom: 0.1rem;
+}
+
+/* Input Styles */
+.signup-signin-input {
+    padding: 0.9rem 1.1rem;
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+    font-size: 1.1rem;
+    font-family: 'Junge', serif;
+    background: #f8f8f8;
+    transition: border-color 0.2s;
+}
+
+.signup-signin-input:focus {
+    border-color: #11B650;
+    outline: none;
+}
+
+/* Remember Me Styles */
+.signup-signin-remember {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #222;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+/* Error Message Styles */
+.signup-signin-error {
+    color: #d32f2f;
+    background: #fff0f0;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+/* Button Styles */
+.signup-signin-button {
+    background-color: #11B650;
+    color: white;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 0.9rem 2rem;
+    font-size: 1.2rem;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.signup-signin-button:hover {
+    background-color: #000;
+    color: #11B650;
+    border: 2px solid #11B650;
+}
+
+/* Divider Styles */
+.signup-signin-or {
+    text-align: center;
+    color: #888;
+    margin: 1.2rem 0 0.7rem 0;
+    font-size: 1rem;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+/* Social Button Styles */
+.signup-signin-socials {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.signup-signin-social-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: #fff;
+    border: 1px solid #11B650;
+    border-radius: 1.5rem;
+    padding: 0.7rem 0.5rem;
+    font-size: 1rem;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bold;
+    color: #222;
+    cursor: pointer;
+    transition: background 0.2s, border 0.2s, color 0.2s;
+}
+
+.signup-signin-social-btn:hover {
+    background: #11B650;
+    color: #fff;
+    border: 1px solid #11B650;
+}
+
+/* Switch Link Styles */
+.signup-signin-switch-link {
+    margin-top: 1.2rem;
+    font-size: 1rem;
+    color: #222;
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.signup-signin-switch-link a {
+    color: #11B650;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.signup-signin-switch-link a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .signup-signin-card {
+        max-width: 98vw;
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+    }
+    .signup-signin-title {
+        font-size: 1.5rem;
+    }
+    .signup-signin-input {
+        font-size: 1rem;
+        padding: 0.7rem 0.7rem;
+    }
+    .signup-signin-button,
+    .signup-signin-social-btn {
+        font-size: 1rem;
+        padding: 0.7rem 0.7rem;
+    }
+}

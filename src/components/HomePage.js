@@ -10,6 +10,7 @@ import leather_bag from '../assets/leather_bag.png';
 import profile from '../assets/bussiness-man.png';
 import logo from '../assets/eco_logo.png';
 import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
 
@@ -40,6 +41,10 @@ const HomePage = () => {
                         PRODUCTS AND SERVICES
                     </p>
                     <button className="get-started-button">GET STARTED</button>
+                    <div style={{ marginTop: '1.5rem' }}>
+                        <Link to="/signup" className="get-started-button" style={{ marginRight: '1rem' }}>Sign Up</Link>
+                        <Link to="/signin" className="get-started-button">Sign In</Link>
+                    </div>
                 </div>
 
             </div>
